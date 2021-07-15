@@ -12,4 +12,3 @@ cv.waitKey(0)
 
 cv.destroyAllWindows()
 # 释放所有窗口
-# 123
