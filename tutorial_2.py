@@ -7,6 +7,7 @@ def access_pixels(image):
     height = image.shape[0]
     width = image.shape[1]
     channels = image.shape[2]
+    # height, width, channels = image.shape
     print("width : %s, height : %s, channels : %s" % (width, height, channels))
     for row in range(height):
         for col in range(width):
