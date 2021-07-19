@@ -12,5 +12,5 @@ images = [image, img]
 for i in range(2):
     plt.subplot(1, 2, i+1), plt.imshow(images[i])
     plt.axis("off")
-    # 关闭坐标轴
+    # 关闭坐标轴，on为开启坐标轴
 plt.show()
