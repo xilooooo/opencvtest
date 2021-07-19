@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 image = cv.imread("D:/table/spbj/mao.jpg")
 image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
 # RGR转换为RGB显示格式
+''' 以另一张图片作为水印
+    image2 = cv.imread("D:/table/photo/shuai.jpg")
+    image2 = cv.cvColor(image, cv.COLOR_BGR2RGB)
+    image2 = image2[200:400, 300:500]
+    image[:200, :200] = image2'''
+
 img = image[200:400, 300:500]
 # 获取图像高度为200：400，宽度200：500区域的图像
 image[:200, :200] = img
