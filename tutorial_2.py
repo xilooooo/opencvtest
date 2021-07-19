@@ -20,7 +20,7 @@ def access_pixels(image):
 def create_image():
     img = np.zeros([400, 400, 3], np.uint8)
     img[:, :, 0] = np.ones([400, 400]) * 255
-    # img[;, ;, 0] blue 1 green 2 red   jpg三个通道png四个
+    # img[;, ;, 0] blue 1 green 2 red,jpg三个通道png四个
     cv.imshow("new image", img)
 
 
