@@ -9,7 +9,7 @@ G = image[:, :, 1]
 # green
 R = image[:, :, 2]
 # red
-# 3个通道的获取
+# 3 通道的获取
 B = cv.cvtColor(B, cv.COLOR_BGR2RGB)
 G = cv.cvtColor(G, cv.COLOR_BGR2RGB)
 R = cv.cvtColor(R, cv.COLOR_BGR2RGB)
