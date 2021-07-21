@@ -9,11 +9,15 @@ G = image[:, :, 1]
 # green
 R = image[:, :, 2]
 # red
+print("B", B)
+print("G", G)
+print("R", R)
 # 3 通道的获取
 B = cv.cvtColor(B, cv.COLOR_BGR2RGB)
 G = cv.cvtColor(G, cv.COLOR_BGR2RGB)
 R = cv.cvtColor(R, cv.COLOR_BGR2RGB)
-# 打印三个通道
+# BGR invert to RGB
+# B, G, R = cv.split(image)
 titles = ["B通道", "G通道", "R通道"]
 img = [B, G, R]
 for i in range(3):
@@ -22,3 +26,6 @@ for i in range(3):
     plt.axis("off")
     # 关闭坐标轴
 plt.show()
+'''通道合并
+img = cv.merge([B, G, R])
+img = cv. cvtColor(img, cv.COLOR_BGR2RGB)'''
