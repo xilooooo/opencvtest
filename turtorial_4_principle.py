@@ -13,7 +13,7 @@ for i in range(h):
         # Y=0.3R+0.59G+0.11B
 # 对原图像进行遍历，然后分别对B\G\R按比例灰度化
 gray = cv.cvtColor(gray, cv.COLOR_BGR2RGB)
-# BGR转换为RGB显示格式
+# BGR转换为RGB显示格式 
 plt.imshow(gray)
 plt.title('Y-亮度：灰度处理')    
 plt.axis('off')
