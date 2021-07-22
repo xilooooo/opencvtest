@@ -14,7 +14,7 @@ for i in range(h):
 # 对原图像进行遍历，然后分别对B\G\R按比例灰度化
 gray = cv2.cvtColor(gray, cv2.COLOR_BGR2RGB)
 # BGR转换为RGB显示格式，方便通过matplotlib进行图像显示
-plt.imshow(gray)  
+plt.imshow(gray)
 plt.title('Y-亮度：灰度处理')    
 plt.axis('off')
 # 关闭坐标轴
